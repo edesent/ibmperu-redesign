@@ -260,7 +260,7 @@ textarea {
 
 .hero-content {
   position: relative;
-  width: min(1180px, calc(100% - 36px));
+  width: min(1320px, calc(100% - 36px));
   margin: 0 auto;
   padding: 92px 0 78px;
   color: var(--white);
