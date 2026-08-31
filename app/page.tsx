@@ -9,7 +9,7 @@ export default function Home() {
       <section className="home-hero">
         <div className="hero-background" />
         <div className="hero-content">
-          <p className="eyebrow">Independent Baptist Missions of Peru</p>
+          <p className="eyebrow">Independent Baptist Missions</p>
           <h1>South American missionaries reaching the world with the gospel.</h1>
           <p>
             IBM Peru partners with independent Baptist churches to recommend, support,
