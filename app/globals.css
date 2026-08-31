@@ -54,7 +54,7 @@ textarea {
   align-items: center;
   gap: 24px;
   min-height: 78px;
-  padding: 12px clamp(18px, 4vw, 56px);
+  padding: 12px max(18px, calc((100vw - 1180px) / 2));
   border-bottom: 1px solid rgba(222, 216, 201, 0.76);
   background: rgba(251, 250, 246, 0.92);
   backdrop-filter: blur(18px);
