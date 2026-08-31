@@ -12,9 +12,8 @@ export default function Home() {
           <p className="eyebrow">Independent Baptist Missions of Peru</p>
           <h1>South American missionaries reaching the world with the gospel.</h1>
           <p>
-            Formerly called Peru Missions, IBM Peru partners with independent Baptist
-            churches to train, send, and support faithful missionaries from Peru and
-            neighboring countries.
+            IBM Peru partners with independent Baptist churches to train, send, and
+            support faithful missionaries from Peru and neighboring countries.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/our-mission">
