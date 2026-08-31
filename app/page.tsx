@@ -95,7 +95,7 @@ export default function Home() {
             "Confirmed agreement with the Statement of Faith",
             "Baptist baptism for husband and wife",
             "Missionaries have sound family histories",
-            "Church sent missionaries with good testimony and recommendations",
+            "Church sent missionaries with good testimonies and recommendations",
             "Committed soul-winners with a world vision",
           ].map((item) => (
             <div key={item}>
