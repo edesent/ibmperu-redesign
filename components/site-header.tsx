@@ -17,7 +17,6 @@ export function SiteHeader() {
     <header className="site-header">
       <Link className="brand" href="/" aria-label="IBM Peru home">
         <Image src="/images/ibm-logo.png" alt="" width={220} height={94} priority />
-        <span>{site.shortName}</span>
       </Link>
 
       <nav className="desktop-nav" aria-label="Main navigation">
