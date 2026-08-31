@@ -63,7 +63,7 @@ export default function Home() {
 
       <section className="field-band">
         <div className="field-photo">
-          <Image src="/images/peru-village.jpg" alt="Peruvian village and mountains" fill sizes="(max-width: 900px) 100vw, 48vw" />
+          <Image src="/images/mission-training-gathering.jpg" alt="Mission training gathering in Peru" fill sizes="(max-width: 900px) 100vw, 48vw" />
         </div>
         <div className="field-copy">
           <p className="eyebrow">On The Field</p>
