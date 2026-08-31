@@ -31,9 +31,9 @@ export function SiteHeader() {
             ))}
           </div>
         </div>
-        {primaryLinks.map((link) => (
+        {headerLinks.map((link) => (
           <Link key={link.href} href={link.href}>
-            {link.label}
+            {link.href === "/scripture-work" ? "Scriptures" : link.label}
           </Link>
         ))}
       </nav>
