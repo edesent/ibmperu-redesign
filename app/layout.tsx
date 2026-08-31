@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import localFont from "next/font/local";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { site } from "@/lib/site";
+import { site, siteUrl } from "@/lib/site";
 import "./globals.css";
 
 // Self-hosted so the build never depends on fonts.gstatic.com.
@@ -26,6 +26,7 @@ const displayFont = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
     default: `${site.shortName} | ${site.name}`,
     template: `%s | ${site.shortName}`,

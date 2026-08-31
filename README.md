@@ -48,3 +48,20 @@ npm run dev
 npm run lint
 npm run build
 ```
+
+## Typography
+
+Headings, the wordmark, and the stat numbers are set in **Anton** — the closest
+match to the IBM Peru mark, which is a fat condensed grotesque with flat
+terminals and a thin right diagonal on the M. Body copy is **Archivo**.
+
+Both are self-hosted from `fonts/` and loaded with `next/font/local`, so the
+production build never depends on `fonts.gstatic.com` being reachable.
+
+## Going live
+
+The site is currently a demo at `ibmperu.elijahdesent.com` and serves
+`Disallow: /` so it cannot compete with ibmperu.org for their own name.
+
+To launch, set `NEXT_PUBLIC_SITE_URL=https://ibmperu.org` in the Vercel project.
+That one variable flips `robots.txt` and every canonical URL at once.

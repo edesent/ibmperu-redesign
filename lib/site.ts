@@ -11,6 +11,13 @@ import {
   Users,
 } from "lucide-react";
 
+// Set NEXT_PUBLIC_SITE_URL to https://ibmperu.org at launch — that alone flips
+// robots.txt and every canonical off the demo settings. See README "Going live".
+export const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://ibmperu.elijahdesent.com";
+
+export const isDemo = !/ibmperu\.org$/.test(new URL(siteUrl).hostname);
+
 export const site = {
   name: "Independent Baptist Missions of Peru",
   shortName: "IBM Peru",
