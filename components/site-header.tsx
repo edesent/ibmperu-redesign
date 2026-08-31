@@ -8,7 +8,10 @@ import { aboutLinks, primaryLinks, site } from "@/lib/site";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
-  const links = [...aboutLinks, ...primaryLinks];
+  const headerLinks = primaryLinks.filter(
+    (link) => link.href !== "/language-information" && link.href !== "/how-our-missionaries-are-supported",
+  );
+  const links = [...aboutLinks, ...headerLinks];
 
   return (
     <header className="site-header">
