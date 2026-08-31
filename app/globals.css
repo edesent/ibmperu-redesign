@@ -291,6 +291,7 @@ textarea {
 .hero-content h1 {
   max-width: 16ch;
   font-size: clamp(2.9rem, 5.6vw, 5.4rem);
+  line-height: 1.08;
   text-shadow: 0 2px 30px rgba(10, 10, 10, 0.6), 0 1px 3px rgba(10, 10, 10, 0.4);
 }
 
