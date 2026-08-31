@@ -254,7 +254,7 @@ textarea {
   background:
     linear-gradient(100deg, rgba(10, 10, 10, 0.93) 0%, rgba(10, 10, 10, 0.7) 32%, rgba(93, 21, 18, 0.34) 62%, rgba(10, 10, 10, 0.06) 100%),
     linear-gradient(0deg, rgba(10, 10, 10, 0.82) 0%, rgba(10, 10, 10, 0.24) 42%, rgba(10, 10, 10, 0) 78%),
-    url("/images/ibm-campus-hero.jpg") 68% center / cover;
+    url("/images/ibm-campus-hero.jpg") 82% center / cover;
   transform: scale(1.02);
 }
 
@@ -937,7 +937,7 @@ textarea {
   .hero-background {
     background:
       linear-gradient(0deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.6) 48%, rgba(93, 21, 18, 0.3) 100%),
-      url("/images/ibm-campus-hero.jpg") 68% center / cover;
+      url("/images/ibm-campus-hero.jpg") 82% center / cover;
   }
 
   .hero-content {
