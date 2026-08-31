@@ -13,7 +13,7 @@ export default function Home() {
           <h1>South American missionaries reaching the world with the gospel.</h1>
           <p>
             IBM Peru partners with independent Baptist churches to recommend, support,
-            train, and help send faithful Baptist missionaries from Peru and neighboring
+            prepare, and help send faithful Baptist missionaries from Peru and neighboring
             countries.
           </p>
           <div className="hero-actions">
