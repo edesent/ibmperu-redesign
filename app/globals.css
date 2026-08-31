@@ -937,7 +937,7 @@ textarea {
   .hero-background {
     background:
       linear-gradient(0deg, rgba(10, 10, 10, 0.95) 0%, rgba(10, 10, 10, 0.6) 48%, rgba(93, 21, 18, 0.3) 100%),
-      url("/images/ibm-campus-hero.jpg") center / cover;
+      url("/images/ibm-campus-hero.jpg") 68% center / cover;
   }
 
   .hero-content {
