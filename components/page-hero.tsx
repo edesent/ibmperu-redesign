@@ -19,7 +19,14 @@ export function PageHero({ eyebrow, title, summary, image, icon: Icon }: PageHer
       </div>
       <div className="page-hero-media">
         {image ? (
-          <Image className="page-hero-image" src={image} alt="" fill sizes="(max-width: 1100px) 100vw, 42vw" />
+          <Image
+            className="page-hero-image"
+            src={image}
+            alt=""
+            fill
+            priority
+            sizes="(max-width: 1100px) 100vw, 42vw"
+          />
         ) : null}
         {Icon ? (
           <div className="page-hero-icon" aria-hidden>
