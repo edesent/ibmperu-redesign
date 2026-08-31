@@ -14,7 +14,7 @@ export default function Home() {
           <p>
             IBM Peru partners with independent Baptist churches to recommend, support,
             prepare, and help send faithful Baptist missionaries from Peru and neighboring
-            countries.
+            countries to the uttermost parts of the earth.
           </p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/our-mission">
