@@ -1,15 +1,16 @@
 :root {
-  --ink: #18211f;
-  --muted: #5f6b64;
+  --ink: #111111;
+  --muted: #5c5654;
   --paper: #fbfaf6;
   --white: #ffffff;
   --line: #ded8c9;
-  --green: #245542;
-  --green-dark: #123227;
-  --red: #9a342d;
-  --gold: #d7a642;
-  --blue: #216579;
-  --shadow: 0 22px 70px rgba(24, 33, 31, 0.16);
+  --black: #0a0a0a;
+  --charcoal: #171514;
+  --red: #a62521;
+  --red-dark: #5d1512;
+  --highlight: #e34b43;
+  --accent: #c9362f;
+  --shadow: 0 22px 70px rgba(17, 17, 17, 0.18);
 }
 
 * {
@@ -81,7 +82,7 @@ textarea {
   font-size: 0.9rem;
   font-weight: 900;
   text-transform: uppercase;
-  color: #27352f;
+  color: var(--ink);
 }
 
 .desktop-nav > a,
@@ -186,7 +187,7 @@ textarea {
 }
 
 .button-donate {
-  background: var(--green);
+  background: var(--black);
   color: var(--white);
 }
 
@@ -235,15 +236,15 @@ textarea {
   display: flex;
   align-items: end;
   overflow: hidden;
-  background: var(--green-dark);
+  background: var(--black);
 }
 
 .hero-background {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(18, 50, 39, 0.96), rgba(18, 50, 39, 0.5) 46%, rgba(18, 50, 39, 0.08)),
-    linear-gradient(0deg, rgba(24, 33, 31, 0.58), rgba(24, 33, 31, 0)),
+    linear-gradient(90deg, rgba(10, 10, 10, 0.97), rgba(93, 21, 18, 0.62) 48%, rgba(10, 10, 10, 0.08)),
+    linear-gradient(0deg, rgba(17, 17, 17, 0.6), rgba(17, 17, 17, 0)),
     url("/images/peru-landscape.jpg") center / cover;
   transform: scale(1.02);
 }
@@ -258,7 +259,7 @@ textarea {
 
 .eyebrow {
   margin: 0 0 12px;
-  color: var(--gold);
+  color: var(--highlight);
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0;
@@ -352,7 +353,7 @@ textarea {
   min-height: 240px;
   overflow: hidden;
   border-radius: 8px;
-  box-shadow: 0 16px 44px rgba(24, 33, 31, 0.12);
+  box-shadow: 0 16px 44px rgba(17, 17, 17, 0.14);
 }
 
 .story-image img {
@@ -388,7 +389,7 @@ textarea {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--white);
-  box-shadow: 0 8px 30px rgba(24, 33, 31, 0.06);
+  box-shadow: 0 8px 30px rgba(17, 17, 17, 0.07);
   transition: transform 180ms ease, border-color 180ms ease;
 }
 
@@ -398,7 +399,7 @@ textarea {
 }
 
 .focus-card svg {
-  color: var(--blue);
+  color: var(--red);
 }
 
 .focus-card h3 {
@@ -447,7 +448,7 @@ textarea {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 8px;
-  background: #172620;
+  background: var(--black);
   color: var(--white);
 }
 
@@ -489,7 +490,7 @@ textarea {
 }
 
 .field-list svg {
-  color: var(--gold);
+  color: var(--highlight);
   margin-top: 4px;
 }
 
@@ -513,12 +514,12 @@ textarea {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--white);
-  color: #32413b;
+  color: #2f2b2a;
   font-weight: 760;
 }
 
 .requirements-grid svg {
-  color: var(--green);
+  color: var(--red);
   margin-top: 2px;
 }
 
@@ -548,13 +549,13 @@ textarea {
   margin-bottom: 72px;
   padding: 34px;
   border-radius: 8px;
-  background: var(--green-dark);
+  background: var(--black);
   color: var(--white);
 }
 
 .visit-band .eyebrow,
 .visit-band svg {
-  color: var(--gold);
+  color: var(--highlight);
 }
 
 .visit-band h2 {
@@ -570,7 +571,7 @@ textarea {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.68fr);
   min-height: 420px;
-  background: var(--green-dark);
+  background: var(--black);
   color: var(--white);
 }
 
@@ -595,7 +596,7 @@ textarea {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(18, 50, 39, 0.54), rgba(18, 50, 39, 0.08));
+  background: linear-gradient(90deg, rgba(10, 10, 10, 0.58), rgba(93, 21, 18, 0.16));
 }
 
 .page-hero-image {
@@ -677,7 +678,7 @@ textarea {
   border-left: 5px solid var(--red);
   border-radius: 8px;
   background: var(--white);
-  box-shadow: 0 12px 36px rgba(24, 33, 31, 0.08);
+  box-shadow: 0 12px 36px rgba(17, 17, 17, 0.09);
 }
 
 .callout-panel h2 {
@@ -691,7 +692,7 @@ textarea {
 }
 
 .page-body {
-  color: #25312d;
+  color: #2b2827;
   font-size: 1.06rem;
 }
 
@@ -722,7 +723,7 @@ textarea {
 
 .page-body p,
 .page-body li {
-  color: #3b4742;
+  color: #453f3d;
 }
 
 .page-body a {
@@ -752,7 +753,7 @@ textarea {
   max-height: 620px;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 14px 42px rgba(24, 33, 31, 0.12);
+  box-shadow: 0 14px 42px rgba(17, 17, 17, 0.14);
 }
 
 .page-body .wp-block-columns {
@@ -772,14 +773,14 @@ textarea {
 .page-body blockquote {
   margin: 30px 0;
   padding: 18px 22px;
-  border-left: 5px solid var(--gold);
+  border-left: 5px solid var(--highlight);
   background: #fffaf0;
   color: var(--ink);
 }
 
 .site-footer {
   padding: clamp(42px, 7vw, 72px) clamp(18px, 4vw, 56px) 30px;
-  background: #172620;
+  background: var(--black);
   color: var(--white);
 }
 
@@ -914,7 +915,7 @@ textarea {
 
   .hero-background {
     background:
-      linear-gradient(0deg, rgba(18, 50, 39, 0.96), rgba(18, 50, 39, 0.34)),
+      linear-gradient(0deg, rgba(10, 10, 10, 0.96), rgba(93, 21, 18, 0.42)),
       url("/images/peru-landscape.jpg") center / cover;
   }
 
