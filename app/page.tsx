@@ -94,7 +94,7 @@ export default function Home() {
             "Baptist in doctrine and practice",
             "Confirmed agreement with the Statement of Faith",
             "Baptist baptism for husband and wife",
-            "Legally married and not divorced",
+            "Missionaries have sound family histories",
             "Church sent missionaries with good testimony and recommendations",
             "Committed soul-winners with a world vision",
           ].map((item) => (
