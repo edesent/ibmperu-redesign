@@ -58,7 +58,7 @@ export function SiteHeader() {
         <nav className="mobile-nav" aria-label="Mobile navigation">
           {links.map((link) => (
             <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>
-              {link.label}
+              {link.href === "/scripture-work" ? "Scriptures" : link.label}
             </Link>
           ))}
           <a href={site.donateUrl} onClick={() => setOpen(false)}>
