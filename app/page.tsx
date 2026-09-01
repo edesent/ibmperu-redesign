@@ -71,7 +71,7 @@ export default function Home() {
           <div className="field-list">
             {[
               "Supporting churches in Peru and from around the world.",
-              "A base church and land in Pachacamac for mission office, seminary, and Scripture publishing.",
+              "A missions base in Pachacamac, Lima, Peru for missions office, Baptist International University, Scripture publishing, and dormitories for mission trips.",
               "Baptist International University curriculum for pastors and missionaries.",
               "Support through HBC Peru fund and partner churches in the USA and internationally.",
             ].map((item) => (
