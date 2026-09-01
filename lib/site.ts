@@ -239,7 +239,7 @@ export const gallery = [
   { src: "/images/peru-landscape.jpg", alt: "Landscape in Peru" },
   { src: "/images/field-visit-1.png", alt: "Ministry gathering in Peru" },
   { src: "/images/field-visit-2.png", alt: "Mission field visit" },
-  { src: "/images/field-visit-3.png", alt: "Church ministry in Peru" },
+  { src: "/images/img-6859.jpeg", alt: "IBM Peru ministry work" },
   { src: "/images/awajun-scripture.jpg", alt: "Scripture publication work" },
   { src: "/images/ibela-church.jpg", alt: "Iglesia Bautista El Lindero Antiguo" },
 ];
