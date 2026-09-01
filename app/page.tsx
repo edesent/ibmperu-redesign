@@ -70,7 +70,7 @@ export default function Home() {
           <h2>A Peru-based mission office with worldwide ambition.</h2>
           <div className="field-list">
             {[
-              "Supporting churches in Peru and 60-plus missionaries.",
+              "Supporting churches in Peru and from around the world.",
               "A base church and land in Pachacamac for mission office, seminary, and Scripture publishing.",
               "Baptist International University curriculum for pastors and missionaries.",
               "Support through HBC Peru fund and partner churches in the USA and internationally.",
