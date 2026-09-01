@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, CheckCircle2, ExternalLink, Mail, MapPinned } from "lucide-react";
+import { ArrowRight, CheckCircle2, Mail, MapPinned } from "lucide-react";
 import { PhotoGallery } from "@/components/photo-gallery";
 import { focusCards, site, stats } from "@/lib/site";
 
@@ -22,10 +22,10 @@ export default function Home() {
               Our Mission
               <ArrowRight size={17} aria-hidden />
             </Link>
-            <a className="button button-light" href={site.donateUrl}>
+            <Link className="button button-light" href={site.giveHref}>
               Donate
-              <ExternalLink size={17} aria-hidden />
-            </a>
+              <ArrowRight size={17} aria-hidden />
+            </Link>
           </div>
         </div>
       </section>
@@ -139,10 +139,10 @@ export default function Home() {
           </p>
         </div>
         <div className="funding-actions">
-          <a className="button button-primary" href={site.donateUrl}>
+          <Link className="button button-primary" href={site.giveHref}>
             Give Online
-            <ExternalLink size={17} aria-hidden />
-          </a>
+            <ArrowRight size={17} aria-hidden />
+          </Link>
           <Link className="button button-outline" href="/contact">
             Contact IBM
             <Mail size={17} aria-hidden />

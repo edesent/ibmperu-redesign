@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { aboutLinks, primaryLinks, site } from "@/lib/site";
 
@@ -38,10 +38,10 @@ export function SiteHeader() {
       </nav>
 
       <div className="header-actions">
-        <a className="button button-donate" href={site.donateUrl}>
+        <Link className="button button-donate" href={site.giveHref}>
           Donate
-          <ExternalLink size={16} aria-hidden />
-        </a>
+          <ArrowRight size={16} aria-hidden />
+        </Link>
         <button
           className="icon-button mobile-menu-button"
           type="button"
@@ -60,9 +60,9 @@ export function SiteHeader() {
               {link.href === "/scripture-work" ? "Scriptures" : link.label}
             </Link>
           ))}
-          <a href={site.donateUrl} onClick={() => setOpen(false)}>
+          <Link href={site.giveHref} onClick={() => setOpen(false)}>
             Donate
-          </a>
+          </Link>
         </nav>
       ) : null}
     </header>

@@ -25,7 +25,11 @@ export const site = {
     "Training, sending, and supporting Baptist missionaries from South America to the world.",
   email: "nash.desent@outlook.com",
   phone: "401.862.6604",
+  // The on-site giving page is where every Donate button goes; the Donorbox
+  // links are the form it embeds and the fallback if someone lands off-site.
+  giveHref: "/give",
   donateUrl: "https://donorbox.org/independent-baptist-missions",
+  donorboxEmbedUrl: "https://donorbox.org/embed/independent-baptist-missions",
 };
 
 export const aboutLinks = [
@@ -51,6 +55,7 @@ export const primaryLinks = [
 export const footerLinks = [
   ...aboutLinks.slice(0, 5),
   ...primaryLinks,
+  { href: "/give", label: "Give" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
