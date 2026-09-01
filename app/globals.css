@@ -1243,3 +1243,387 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
+/* Missionary directory ---------------------------------------------------- */
+.directory-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: clamp(48px, 7vw, 84px) 0 clamp(28px, 4vw, 44px);
+}
+
+.directory-header h1 {
+  max-width: 18ch;
+  margin: 0;
+  font-family: var(--font-display), "Anton", "Haettenschweiler", "Arial Narrow", ui-sans-serif, sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  line-height: 1.02;
+}
+
+.directory-header > div > p:last-child {
+  max-width: 60ch;
+  margin: 16px 0 0;
+  color: var(--muted);
+}
+
+.directory-section {
+  padding-top: 0;
+}
+
+.directory-notice {
+  margin: 0 0 26px;
+  padding: 12px 16px;
+  border: 1px solid rgba(166, 37, 33, 0.3);
+  border-radius: 8px;
+  background: rgba(227, 75, 67, 0.08);
+  color: var(--red-dark);
+  font-size: 0.92rem;
+}
+
+.directory-notice code {
+  font-size: 0.88em;
+}
+
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+  gap: 20px;
+}
+
+.worker-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+  box-shadow: 0 2px 10px rgba(17, 17, 17, 0.05);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.worker-card:hover,
+.worker-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(166, 37, 33, 0.45);
+  box-shadow: 0 16px 34px rgba(17, 17, 17, 0.14);
+}
+
+.worker-photo {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 240px;
+  overflow: hidden;
+  background: var(--charcoal);
+}
+
+.worker-photo img {
+  object-fit: cover;
+}
+
+.portrait-initials {
+  font-family: var(--font-display), "Anton", "Haettenschweiler", "Arial Narrow", ui-sans-serif, sans-serif;
+  font-size: 3.4rem;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.02em;
+}
+
+.worker-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px 22px 22px;
+}
+
+.worker-field {
+  color: var(--red);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.worker-body h2 {
+  margin: 8px 0 0;
+  font-family: var(--font-display), "Anton", "Haettenschweiler", "Arial Narrow", ui-sans-serif, sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.08;
+}
+
+.worker-summary {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.97rem;
+}
+
+.worker-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 18px;
+  color: var(--red);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+/* Missionary profile ------------------------------------------------------ */
+.worker-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+  align-items: stretch;
+  background: var(--black);
+  color: var(--white);
+}
+
+.worker-hero-copy {
+  padding: clamp(40px, 6vw, 78px) clamp(20px, 5vw, 64px);
+}
+
+.worker-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 22px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.84rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.worker-back:hover {
+  color: var(--white);
+}
+
+.worker-hero-copy h1 {
+  margin: 0;
+  font-family: var(--font-display), "Anton", "Haettenschweiler", "Arial Narrow", ui-sans-serif, sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.6rem, 5.6vw, 5rem);
+  line-height: 1.0;
+}
+
+.worker-hero-field {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 18px 0 0;
+  color: rgba(255, 255, 255, 0.82);
+  font-weight: 700;
+}
+
+.worker-hero-field svg {
+  color: var(--highlight);
+  flex: none;
+}
+
+.worker-hero-summary {
+  max-width: 54ch;
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.worker-hero-media {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 340px;
+  background: var(--charcoal);
+}
+
+.worker-hero-media img {
+  object-fit: cover;
+}
+
+.worker-hero-media .portrait-initials {
+  font-size: clamp(4rem, 9vw, 7rem);
+}
+
+.worker-body-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.4fr);
+  align-items: start;
+  gap: clamp(28px, 4vw, 56px);
+}
+
+.worker-bio p {
+  margin: 0 0 16px;
+  color: #453f3d;
+  font-size: 1.06rem;
+}
+
+.worker-block {
+  margin-top: clamp(36px, 5vw, 56px);
+}
+
+.worker-block h2 {
+  margin: 0 0 18px;
+  font-family: var(--font-display), "Anton", "Haettenschweiler", "Arial Narrow", ui-sans-serif, sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.06;
+}
+
+.worker-empty {
+  margin: 0;
+  padding: 22px;
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  color: var(--muted);
+}
+
+.letter-list {
+  display: grid;
+  gap: 16px;
+}
+
+.letter {
+  padding: clamp(20px, 3vw, 30px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+}
+
+.letter-date {
+  margin: 0;
+  color: var(--red);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.letter h3 {
+  margin: 8px 0 12px;
+  font-family: var(--font-display), "Anton", "Haettenschweiler", "Arial Narrow", ui-sans-serif, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.12;
+}
+
+.letter p {
+  margin: 0 0 12px;
+  color: #453f3d;
+}
+
+.letter p:last-of-type {
+  margin-bottom: 0;
+}
+
+.letter-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+  color: var(--red);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.video-grid,
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.video-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+
+.video-thumb {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--charcoal);
+}
+
+.video-thumb img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-play {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  background: var(--red);
+  color: var(--white);
+  box-shadow: 0 10px 26px rgba(10, 10, 10, 0.4);
+  transition: transform 160ms ease;
+}
+
+.video-card:hover .video-play,
+.video-card:focus-visible .video-play {
+  transform: scale(1.08);
+}
+
+.video-title {
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.video-card.is-playing {
+  aspect-ratio: 16 / 9;
+}
+
+.video-card.is-playing iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
+.photo-grid .rail-image-frame {
+  height: 200px;
+}
+
+.worker-aside {
+  position: sticky;
+  top: 96px;
+}
+
+@media (max-width: 1100px) {
+  .worker-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .worker-hero-media {
+    min-height: 300px;
+    order: -1;
+  }
+
+  .worker-body-section {
+    grid-template-columns: 1fr;
+  }
+
+  .worker-aside {
+    position: static;
+  }
+}

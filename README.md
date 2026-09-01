@@ -11,6 +11,22 @@ A complete rebuild of [ibmperu.org](https://ibmperu.org/) as a modern Next.js ap
 - Local ministry images copied from the original site
 - WordPress.com content fetch with 12-hour static regeneration
 
+## Adding a Missionary
+
+The workers directory at `/missionaries` is driven entirely by one file:
+`content/missionaries.ts`. Add a missionary there and their card appears on the
+directory and their page appears at `/missionaries/<slug>` — nothing else to
+wire up. That file has step-by-step instructions at the top for adding a
+missionary, a prayer letter, a video, or photos.
+
+- Photos go in `public/missionaries/`, PDFs in `public/letters/`.
+- Letters are listed newest first automatically.
+- A missionary with no photo gets his initials, so a profile is never broken.
+- Type letters out rather than only attaching a PDF — a PDF cannot be read
+  comfortably on a phone and search engines do not index it well.
+- Two sample profiles ship with `placeholder: true`. The notice on the
+  directory disappears on its own once no placeholders are left.
+
 ## Key Routes
 
 - `/`
@@ -30,6 +46,9 @@ A complete rebuild of [ibmperu.org](https://ibmperu.org/) as a modern Next.js ap
 - `/379-2`
 - `/resources`
 - `/blog`
+- `/give`
+- `/missionaries`
+- `/missionaries/[slug]`
 - `/contact`
 - `/about`
 - `/sample-page`

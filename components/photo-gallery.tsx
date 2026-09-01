@@ -5,17 +5,28 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { gallery } from "@/lib/site";
 
-export function PhotoGallery() {
+type Photo = { src: string; alt: string; width: number; height: number };
+
+export function PhotoGallery({
+  photos = gallery,
+  layout = "rail",
+  label = "IBM Peru ministry photos",
+}: {
+  photos?: Photo[];
+  /** "rail" is the homepage's uneven strip; "grid" is an even grid. */
+  layout?: "rail" | "grid";
+  label?: string;
+}) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-  const photo = openIndex === null ? null : gallery[openIndex];
+  const photo = openIndex === null ? null : photos[openIndex];
 
   const close = useCallback(() => setOpenIndex(null), []);
   const step = useCallback(
     (delta: number) =>
       setOpenIndex((current) =>
-        current === null ? current : (current + delta + gallery.length) % gallery.length,
+        current === null ? current : (current + delta + photos.length) % photos.length,
       ),
-    [],
+    [photos.length],
   );
 
   useEffect(() => {
@@ -40,8 +51,11 @@ export function PhotoGallery() {
 
   return (
     <>
-      <section className="image-rail" aria-label="IBM Peru ministry photos">
-        {gallery.map((image, index) => (
+      <section
+        className={layout === "grid" ? "photo-grid" : "image-rail"}
+        aria-label={label}
+      >
+        {photos.map((image, index) => (
           <button
             className="rail-image"
             key={image.src}
