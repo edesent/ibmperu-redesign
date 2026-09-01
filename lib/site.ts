@@ -235,11 +235,18 @@ export const pageDetails: Record<
   },
 };
 
+// width/height are the files' real pixel sizes — the lightbox caps each photo at
+// its own natural width so the small ones are never blown up.
 export const gallery = [
-  { src: "/images/peru-landscape.jpg", alt: "Landscape in Peru" },
-  { src: "/images/field-visit-1.png", alt: "Ministry gathering in Peru" },
-  { src: "/images/field-visit-2.png", alt: "Mission field visit" },
-  { src: "/images/img-6859.jpeg", alt: "IBM Peru ministry work" },
-  { src: "/images/awajun-scripture.jpg", alt: "Scripture publication work" },
-  { src: "/images/ibela-church.jpg", alt: "Iglesia Bautista El Lindero Antiguo" },
+  { src: "/images/peru-landscape.jpg", alt: "Landscape in Peru", width: 3872, height: 2269 },
+  { src: "/images/field-visit-1.png", alt: "Ministry gathering in Peru", width: 512, height: 320 },
+  { src: "/images/field-visit-2.png", alt: "Mission field visit", width: 512, height: 320 },
+  {
+    src: "/images/img-6859.jpeg",
+    alt: "Semilla Sembradores Enviadores, the mission's sower emblem",
+    width: 1320,
+    height: 2190,
+  },
+  { src: "/images/awajun-scripture.jpg", alt: "Scripture publication work", width: 886, height: 633 },
+  { src: "/images/ibela-church.jpg", alt: "Iglesia Bautista El Lindero Antiguo", width: 1600, height: 900 },
 ];

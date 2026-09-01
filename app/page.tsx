@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, ExternalLink, Mail, MapPinned } from "lucide-react";
-import { focusCards, gallery, site, stats } from "@/lib/site";
+import { PhotoGallery } from "@/components/photo-gallery";
+import { focusCards, site, stats } from "@/lib/site";
 
 export default function Home() {
   return (
@@ -126,13 +127,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="image-rail" aria-label="IBM Peru ministry photos">
-        {gallery.map((image) => (
-          <div className="rail-image" key={image.src}>
-            <Image src={image.src} alt={image.alt} fill sizes="(max-width: 760px) 100vw, 22vw" />
-          </div>
-        ))}
-      </section>
+      <PhotoGallery />
 
       <section className="section funding-section">
         <div>
