@@ -73,7 +73,7 @@ export default function Home() {
               "Supporting churches in Peru and from around the world.",
               "A missions base in Pachacamac, Lima, Peru for missions office, Baptist International University, Scripture publishing, and dormitories for mission trips.",
               "Baptist International University curriculum for pastors and missionaries.",
-              "Support through HBC Peru fund and partner churches in the USA and internationally.",
+              "Church planting initiatives for men looking to serve in Peru.",
             ].map((item) => (
               <p key={item}>
                 <CheckCircle2 size={19} aria-hidden />
