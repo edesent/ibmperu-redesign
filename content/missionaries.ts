@@ -150,9 +150,9 @@ export const missionaries: Missionary[] = [
   },
   {
     placeholder: true,
-    slug: "juan-vargas",
-    name: "Juan Vargas",
-    field: "Arequipa, Peru",
+    slug: "juan-moreno",
+    name: "Juan Moreno",
+    field: "Pachacamac, Peru",
     sentBy: "Historic Baptist Church",
     since: "2022",
     summary: "Training national men and preaching in the southern highlands.",
