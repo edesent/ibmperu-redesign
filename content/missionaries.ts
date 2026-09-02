@@ -99,6 +99,8 @@ export type Missionary = {
   /** Year they went to the field. */
   since?: string;
   photo?: string;
+  /** Optional focal point for cropped profile photos, e.g. "center 30%". */
+  photoPosition?: string;
   /** One sentence. This is what shows on their card in the directory. */
   summary: string;
   bio?: string[];
