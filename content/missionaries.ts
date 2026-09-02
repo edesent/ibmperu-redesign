@@ -149,15 +149,30 @@ export const missionaries: Missionary[] = [
     ],
   },
   {
-    placeholder: true,
     slug: "juan-moreno",
     name: "Juan Moreno",
     field: "Pachacamac, Peru",
-    sentBy: "Historic Baptist Church",
-    since: "2022",
-    summary: "Training national men and preaching in the southern highlands.",
+    sentBy: "Iglesia Bautista El Lindero Antiguo",
+    summary: "Directing EBBN Bible training, discipleship, and missions outreach from Pachacamac.",
     bio: [
-      "A second sample profile, kept shorter on purpose — a missionary with only a paragraph and no letters yet still gets a complete page.",
+      "Juan Moreno serves with his family in Pachacamac, south of Lima, where he directs the EBBN Ministry under the authority of Iglesia Bautista El Lindero Antiguo. The work in Pachacamac also serves as a base for the missions project throughout Peru.",
+      "Through EBBN, Juan helps train Baptist Bible School teachers and prepares editable Bible study materials for children, adolescents, and young people. His burden is to instill a heart for missions in local churches and help raise up courageous missionaries and pastors.",
+      "Juan also serves with Independent Baptist Missions of Peru, contributing his experience in Excel and data management to track the missions program's income and expenses. The program connects missionaries and supporting churches in Peru, the United States, and other parts of the world.",
+      "At the Pachacamac mission, the Moreno family serves through preaching, Bible studies, children's ministry, discipleship, and guitar lessons used as an outreach to young people and their families.",
+    ],
+    letters: [
+      {
+        date: "2026-08",
+        title: "August 2026 Ministry Report",
+        body: [
+          "Juan presented the EBBN ministry to pastors and missionaries at the first Leaders and Pastors Conference. He proposed training Baptist Bible School teachers so that churches can develop a strong missions vision in their classrooms and prepare future missionaries and pastors.",
+          "During a Bible study connected with guitar lessons, a young man accepted Christ. The Moreno family asks prayer for his spiritual growth and for opportunities to reach his family with the gospel.",
+          "EBBN Bible study materials were shared with missionaries serving in Ayacucho and Arequipa. The Exploring God material, which teaches the attributes of God, was prepared in editable versions for children's and youth classes.",
+          "The Pachacamac mission held a special Children's Day activity. The family asks prayer for the believing families who attend faithfully, along with every new believer and child attending the church.",
+          "Prayer requests include wisdom in sharing God's Word, the families and visitors attending services, land in San Antonio de Pachacamac, resources for the ministry and the Moreno home, and the guitar-class outreach project.",
+          "The Moreno family thanks God for the opportunity to share the gospel and expresses gratitude to the churches and individuals whose prayers and financial support make the work possible.",
+        ],
+      },
     ],
   },
 ];
