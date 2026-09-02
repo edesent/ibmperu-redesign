@@ -1600,6 +1600,15 @@ textarea {
   border-radius: 10px;
 }
 
+.uploaded-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: 10px;
+  background: var(--charcoal);
+  object-fit: contain;
+}
+
 .photo-grid .rail-image-frame {
   height: 200px;
 }
