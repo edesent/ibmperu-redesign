@@ -155,6 +155,7 @@ export const missionaries: Missionary[] = [
     name: "Juan Moreno",
     field: "Pachacamac, Peru",
     photo: "/missionaries/juan-moreno.jpeg",
+    photoPosition: "center 28%",
     sentBy: "Iglesia Bautista El Lindero Antiguo",
     summary: "Directing EBBN Bible training, discipleship, and missions outreach from Pachacamac.",
     bio: [
