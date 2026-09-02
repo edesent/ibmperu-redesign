@@ -145,8 +145,7 @@ export const missionaries: Missionary[] = [
       },
     ],
     videos: [
-      // Replace with a real YouTube code from the missionary's own video.
-      { id: "REPLACE_ME1", title: "Sample update from the field" },
+      { url: "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/yws3C2ngUM5cl_3BEXiTYZaYZeCietFF/29358b49-f5d1-4681-8e0c-eebb33dc8649-kMD1TDq0dHf9MJ4NlJHMTkdgP0cYNQ.mov", title: "Jorge Rodriguez — Missionary Video" },
     ],
   },
   {
