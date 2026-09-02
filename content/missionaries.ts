@@ -115,7 +115,7 @@ export const missionaries: Missionary[] = [
   {
     placeholder: true,
     slug: "jorge-ramirez",
-    name: "Jorge Ramírez",
+    name: "Jorge Rodriguez",
     field: "Iquitos, Peru",
     sentBy: "Iglesia Bautista El Lindero Antiguo",
     since: "2019",
