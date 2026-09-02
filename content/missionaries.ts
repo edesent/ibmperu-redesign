@@ -116,7 +116,7 @@ export const missionaries: Missionary[] = [
   // ---------------------------------------------------------------------
   {
     placeholder: true,
-    slug: "jorge-ramirez",
+    slug: "jorge-rodriguez",
     name: "Jorge Rodriguez",
     field: "San Martin, Tarapoto, Peru",
     photo: "/missionaries/img-6869.jpeg",
