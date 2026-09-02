@@ -117,6 +117,7 @@ export const missionaries: Missionary[] = [
     slug: "jorge-ramirez",
     name: "Jorge Rodriguez",
     field: "San Martin, Tarapoto, Peru",
+    photo: "/missionaries/img-6869.jpeg",
     sentBy: "Iglesia Bautista El Lindero Antiguo",
     since: "2019",
     summary: "Church planting and Scripture distribution along the Amazon river.",
