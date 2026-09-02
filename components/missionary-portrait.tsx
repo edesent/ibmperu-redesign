@@ -14,7 +14,14 @@ export function MissionaryPortrait({
 }) {
   if (worker.photo) {
     return (
-      <Image src={worker.photo} alt={worker.name} fill sizes={sizes} priority={priority} />
+      <Image
+        src={worker.photo}
+        alt={worker.name}
+        fill
+        sizes={sizes}
+        priority={priority}
+        style={{ objectPosition: worker.photoPosition ?? "center" }}
+      />
     );
   }
 
