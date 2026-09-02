@@ -112,7 +112,7 @@ export default async function MissionaryPage({ params }: PageProps) {
               <h2>Videos</h2>
               <div className="video-grid">
                 {worker.videos.map((video) => (
-                  <MissionaryVideoCard key={video.id} video={video} />
+                  <MissionaryVideoCard key={video.id ?? video.url} video={video} />
                 ))}
               </div>
             </div>
