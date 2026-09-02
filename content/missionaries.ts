@@ -70,8 +70,10 @@ export type MissionaryLetter = {
 };
 
 export type MissionaryVideo = {
-  /** The code from the YouTube address, not the whole link. */
-  id: string;
+  /** The code from the YouTube address. Use either id or url. */
+  id?: string;
+  /** Direct address for an uploaded video file. */
+  url?: string;
   title: string;
   /** Optional. Leave off and YouTube's own thumbnail is used. */
   poster?: string;
