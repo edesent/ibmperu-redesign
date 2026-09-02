@@ -13,7 +13,22 @@ import type { MissionaryVideo } from "@/content/missionaries";
 export function MissionaryVideoCard({ video }: { video: MissionaryVideo }) {
   const [playing, setPlaying] = useState(false);
   const [posterFailed, setPosterFailed] = useState(false);
-  const poster = video.poster ?? `https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`;
+
+  if (video.url) {
+    return (
+      <div className="video-card uploaded-video-card">
+        <video className="uploaded-video" controls preload="metadata" poster={video.poster}>
+          <source src={video.url} />
+          Your browser does not support this video.
+        </video>
+        <span className="video-title">{video.title}</span>
+      </div>
+    );
+  }
+
+  const youtubeId = video.id;
+  if (!youtubeId) return null;
+  const poster = video.poster ?? `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`;
 
   if (playing) {
     return (
