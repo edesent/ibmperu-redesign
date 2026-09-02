@@ -34,7 +34,7 @@ export function MissionaryVideoCard({ video }: { video: MissionaryVideo }) {
     return (
       <div className="video-card is-playing">
         <iframe
-          src={`https://www.youtube-nocookie.com/embed/${video.id}?autoplay=1&rel=0`}
+          src={`https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1&rel=0`}
           title={video.title}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
           allowFullScreen
