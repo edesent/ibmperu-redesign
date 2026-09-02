@@ -176,8 +176,9 @@ export function latestLetterDate(worker: Missionary) {
 }
 
 export function formatLetterDate(date: string) {
-  // Parsed as UTC on purpose: "2026-08-01" must not slip to July in the US.
-  const parsed = new Date(`${date}T00:00:00Z`);
+  const monthOnly = /^\d{4}-\d{2}$/.test(date);
+  const normalizedDate = monthOnly ? `${date}-01` : date;
+  const parsed = new Date(`${normalizedDate}T00:00:00Z`);
 
   if (Number.isNaN(parsed.getTime())) {
     return date;
@@ -186,7 +187,7 @@ export function formatLetterDate(date: string) {
   return parsed.toLocaleDateString("en-US", {
     year: "numeric",
     month: "long",
-    day: "numeric",
+    ...(monthOnly ? {} : { day: "numeric" }),
     timeZone: "UTC",
   });
 }
